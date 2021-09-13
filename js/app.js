@@ -11,19 +11,22 @@
  * 
  * JS Standard: ESlint
  * 
-*/
+ */
 
 /**
  * Define Global Variables
  * 
-*/
-
-
+ */
+const header = document.querySelector(".page__header");
+const nav = document.querySelector(".navbar__menu");
+const navList = document.querySelector(".navbar__list");
+const sections = document.querySelectorAll('section');
 /**
  * End Global Variables
  * Start Helper Functions
  * 
-*/
+ */
+
 
 
 
@@ -31,9 +34,20 @@
  * End Helper Functions
  * Begin Main Functions
  * 
-*/
+ */
+
+// console.log(sections.childElementCount);
+
+function buildNav(sectionCount) {
+
+    for (x = 1; x !== sectionCount + 1; x++) {
+        console.log("section " + x);
+    };
+};
 
 // build the nav
+
+buildNav(sections.length);
 
 
 // Add class 'active' to section when near top of viewport
@@ -46,12 +60,10 @@
  * End Main Functions
  * Begin Events
  * 
-*/
+ */
 
 // Build menu 
 
 // Scroll to section on link click
 
 // Set sections as active
-
-

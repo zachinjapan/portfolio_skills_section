@@ -12,7 +12,7 @@ const sectionCount = sections.length;
 function makeLi(numberOfSections) {
     for (x = 1; x !== numberOfSections + 1; x++) {
         let navItem = document.createElement("li");
-        navItem.textContent = "Section " + x;
+        navItem.innerHTML = "<a " + "id = nav_item_" + x + " href='#section" + x + "'> Section " + x + " </a";
         navList.appendChild(navItem);
     }
 }

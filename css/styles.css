@@ -61,7 +61,10 @@ section {
     min-height: 80vh;
 }
 
+.tool_heading {
+    text-align: center;
 
+}
 
 /* ---- Module Rules ---- */
 
@@ -108,6 +111,7 @@ section {
     width: 100%;
     z-index: 5;
     height: fit-content;
+
 }
 
 /* Footer Styles */
@@ -121,6 +125,10 @@ section {
     color: #fff;
 }
 
+.soft_skill_list {
+    text-align: left;
+    font-size: 3rem;
+}
 
 /* ---- Theme Rules ---- */
 /* Landing Container Styles */
@@ -239,6 +247,8 @@ section.your-active-class .landing__container::after {
     flex-wrap: wrap;
     height: fit-content;
     width: 100%;
+    justify-content: space-evenly;
+
 }
 
 .fab {

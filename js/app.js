@@ -44,7 +44,7 @@ function isInViewport(element) {
 function makeLi(numberOfSections) {
     for (let x = 0; x !== numberOfSections; x++) {
         let navItem = document.createElement("li");
-        navItem.innerHTML = "<a " + "id = nav_item_" + x + " class = 'pizza'>" + sections[x].querySelector("h2").innerText + " </a";
+        navItem.innerHTML = "<a " + "id = nav_item_" + x + " class = 'nav_item'>" + sections[x].querySelector("h2").innerText + " </a";
         navList.appendChild(navItem);
         navItem.addEventListener("click", function () {
             sections[x].scrollIntoView({

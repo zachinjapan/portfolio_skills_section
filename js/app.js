@@ -1,5 +1,4 @@
 /*** Define Global Variables* */
-
 // header section
 const header = document.querySelector(".page__header");
 // nav menu
@@ -10,6 +9,8 @@ const navList = document.querySelector("#navbar__list");
 const sections = document.querySelectorAll('section');
 // count of sections (4)
 const sectionCount = sections.length;
+// footer text
+const footerText = document.querySelector(".footer_text");
 
 
 
@@ -18,7 +19,7 @@ const sectionCount = sections.length;
 // checks if element is in viewport
 
 function isInViewport(element) {
-
+    // passes te element's position to a variable
     const rect = element.getBoundingClientRect();
     return (
         rect.top >= 0 &&
@@ -30,22 +31,24 @@ function isInViewport(element) {
 };
 
 
-
 /**
  * End Helper Functions
  * Begin Main Functions
  * 
  */
 
+
+
 // nav bar
 
-
-// create a bunch of li and add the html section + # to it
+// create a bunch of lis and add a scroll event listener
 function makeLi(numberOfSections) {
     for (let x = 0; x !== numberOfSections; x++) {
         let navItem = document.createElement("li");
         navItem.innerHTML = "<a " + "id = nav_item_" + x + " class = 'nav_item'>" + sections[x].querySelector("h2").innerText + " </a";
         navList.appendChild(navItem);
+
+        // Scroll to anchor ID using scrollTO event
         navItem.addEventListener("click", function () {
             sections[x].scrollIntoView({
                 behavior: 'smooth'
@@ -55,28 +58,32 @@ function makeLi(numberOfSections) {
 }
 
 
-
-
-
-// Add class 'active' to section when near top of viewport
+// Add class 'active' to section and navbar item when near top of viewport
 
 function setActiveClass() {
     for (let y = 0; y < sectionCount; y++) {
         if (isInViewport(sections[y])) {
             sections[y].classList.add("your-active-class");
-        } else {
+            document.getElementById("nav_item_" + y).classList.add("nav_item_in_viewport");
 
+
+        } else {
             sections[y].classList.remove("your-active-class");
+            document.getElementById("nav_item_" + y).classList.remove("nav_item_in_viewport");
         };
 
     }
 }
 
-
-
-// Scroll to anchor ID using scrollTO event
-
-
+function ScrolltoTop(element) {
+    element.addEventListener("click", function () {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    })
+}
 
 
 /**
@@ -85,11 +92,13 @@ function setActiveClass() {
  * 
  */
 
+
 // Build menu 
 makeLi(sectionCount);
 
-
 // Scroll to section on link click
+
+// this was added when the nav item is created
 
 // Set sections as active
 
@@ -98,3 +107,7 @@ document.addEventListener('scroll', function () {
     setActiveClass()
 
 });
+
+// add an event listener for footer text
+
+ScrolltoTop(footerText);

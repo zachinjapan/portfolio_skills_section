@@ -16,6 +16,7 @@ body {
     margin: 0;
     font-family: 'Merriweather', serif;
     color: #fff;
+    user-select: none;
 }
 
 
@@ -95,11 +96,19 @@ section {
 
 .nav_item {
     margin: 10px;
+    font-size: 1.5em;
 }
 
 .nav_item:hover {
     opacity: 0.9;
-    color: #cc1;
+    color: rgb(0, 119, 255);
+    size: 200%;
+}
+
+.nav_item_in_viewport {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
 }
 
 /* Header Styles */
@@ -111,6 +120,7 @@ section {
     width: 100%;
     z-index: 5;
     height: fit-content;
+    opacity: 0.7;
 
 }
 
@@ -127,7 +137,12 @@ section {
 
 .soft_skill_list {
     text-align: left;
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+.footer_text {
+    text-align: center;
+    text-decoration: blue;
 }
 
 /* ---- Theme Rules ---- */
@@ -253,4 +268,8 @@ section.your-active-class .landing__container::after {
 
 .fab {
     margin: 10px;
+}
+
+figcaption {
+    text-align: center;
 }

@@ -1,7 +1,7 @@
 /* ---- Base Rules ---- */
-@import url(/css/elements.css);
+@import url(elements.css);
 /* ---- background circle animation ---- */
-@import url(/css/background_circles.css);
+@import url(background_circles.css);
 
 .main-hero {
     min-height: 40vh;

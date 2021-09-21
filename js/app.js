@@ -20,12 +20,12 @@ const footerText = document.querySelector(".footer_text");
 
 function isInViewport(element) {
     // passes te element's position to a variable
-    const rect = element.getBoundingClientRect();
+    const elementSize = element.getBoundingClientRect();
     return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        elementSize.top >= 0 &&
+        elementSize.left >= 0 &&
+        elementSize.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        elementSize.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 
 };

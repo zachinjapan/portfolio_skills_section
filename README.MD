@@ -1,4 +1,4 @@
-# Skills Section
+# Skills Section (スキルセクション)
 
 </br>
 
@@ -7,6 +7,8 @@
 ポートフォリオのスキルセクションは、Udacity.comのフロントエンドナノディグリーで作成されたプロジェクトです
 
 目標は、Javascriptが動的にNavbarを生成し、DOMを使用してイベントリスナーを追加するページを作成することでした。
+
+</br>
 
 The skills section of my portolio is based on a project made under the Front-end Nanodegree with Udacity.com
 

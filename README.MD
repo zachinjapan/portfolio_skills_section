@@ -1,4 +1,4 @@
-# Skills_Section
+# Skills Section
 
 </br>
 
@@ -6,22 +6,17 @@
 
 The skills section of my portolio is based on a project made under the Front-end Nanodegree with Udacity.com
 
-The goal was to create a page where Javascript dynamicaly generates the Navbar and adds event listeners using the DOM.
+The goal was to create a page where Javascript dynamically generates the Navbar and adds event listeners using the DOM.
 
 
 
 ## Table of Contents
-
-- [Usage](##Usage)
 - [Links](#links)
 - [Technologies Used](#technologies-used)
 - [License](#license)
 - [Contributions](#contributions)
 - [Questions](#questions)
 
-## Usage
-
-![Demo]<iframe src="https://giphy.com/embed/h530ohhG47FLNdO0sG" width="480" height="266" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/h530ohhG47FLNdO0sG">via GIPHY</a></p><iframe src="https://giphy.com/embed/h530ohhG47FLNdO0sG" width="480" height="266" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/h530ohhG47FLNdO0sG">via GIPHY</a></p>
 
 
 ## Links

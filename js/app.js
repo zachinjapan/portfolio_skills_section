@@ -43,10 +43,16 @@ function isInViewport(element) {
 
 // create a bunch of lis and add a scroll event listener
 function makeLi(numberOfSections) {
+
+
+
     for (let x = 0; x !== numberOfSections; x++) {
+        // using fragments is faster since it is not added to the DOM
+        var fragment = document.createDocumentFragment();
         let navItem = document.createElement("li");
         navItem.innerHTML = "<a " + "id = nav_item_" + x + " class = 'nav_item'>" + sections[x].querySelector("h2").innerText + " </a";
-        navList.appendChild(navItem);
+        fragment.appendChild(navItem);
+        navList.appendChild(fragment);
 
         // Scroll to anchor ID using scrollTO event
         navItem.addEventListener("click", function () {

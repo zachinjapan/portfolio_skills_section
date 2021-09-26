@@ -4,9 +4,14 @@
 
 ## Description
 
+ポートフォリオのスキルセクションは、Udacity.comのフロントエンドナノディグリーで作成されたプロジェクトです
+
+目標は、Javascriptが動的にNavbarを生成し、DOMを使用してイベントリスナーを追加するページを作成することでした。
+
 The skills section of my portolio is based on a project made under the Front-end Nanodegree with Udacity.com
 
 The goal was to create a page where Javascript dynamically generates the Navbar and adds event listeners using the DOM.
+
 
 
 
@@ -45,5 +50,7 @@ Fork, request, or contact me.
 
 [![GitHub](https://img.shields.io/badge/My%20GitHub-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/zachinjapan)
 [![LinkedIn](https://img.shields.io/badge/My%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/zach-stone-45b649211/)
+
+このプロジェクトに関するご質問は、zachinjapan888s@gmail.comまでお気軽にご連絡ください。
 
 Feel free to reach me at zachinjapan888s@gmail.com with any question regarding this project!

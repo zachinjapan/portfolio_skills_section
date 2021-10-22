@@ -4,199 +4,199 @@
 @import url(background_circles.css);
 
 .main-hero {
-    min-height: 40vh;
-    padding-top: 3em;
+  min-height: 40vh;
+  padding-top: 3em;
 }
 
 section {
-    position: relative;
+  position: relative;
 }
 
 .tool_heading {
-    text-align: center;
-
+  text-align: center;
 }
 
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
 .navbar__menu ul {
-    padding-left: 0;
-    margin: 0;
-    text-align: left;
+  padding-left: 0;
+  margin: 0;
+  text-align: left;
 }
 
 /* for desktops */
 @media only screen and (min-width: 768px) {
-    .navbar__menu ul {
-        text-align: right;
-    }
+  .navbar__menu ul {
+    text-align: right;
+  }
 }
 
 .navbar__menu li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .navbar__menu .menu__link {
-    display: block;
-    padding: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
+  display: block;
+  padding: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
 }
 
 .navbar__menu .menu__link:hover {
-    background: #333;
-    color: #fff;
-    transition: ease 0.3s all;
+  background: #333;
+  color: #fff;
+  transition: ease 0.3s all;
 }
 
 .nav_item {
-    margin: 10px;
+  margin: 10px;
 }
 
 /* desktops */
 @media only screen and (min-width: 768px) {
-    .nav_item {
-        font-size: 1.5rem;
-    }
+  .nav_item {
+    font-size: 1.5rem;
+  }
 }
 
 .nav_item:hover {
-    opacity: 0.9;
-    color: rgb(0, 119, 255);
-    size: 200%;
+  opacity: 0.9;
+  color: rgb(0, 119, 255);
+  size: 200%;
 }
 
 .nav_item_in_viewport {
-    color: black;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10%;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10%;
 }
 
 #home_link {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 #home_link:visited {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 /* Header Styles */
 .page__header {
-    background: rgb(0, 0, 0);
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-    height: fit-content;
-    opacity: 0.7;
-
+  background: rgb(0, 0, 0);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  height: fit-content;
+  opacity: 0.7;
 }
 
 /* programming icon section */
 
 .icon_container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: fit-content;
-    justify-content: space-evenly;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: fit-content;
+  justify-content: space-evenly;
 }
 
 .fab {
-    margin: 5px;
+  margin: 5px;
 }
 
 figcaption {
-    text-align: center;
+  text-align: center;
 }
 
 figure {
-    text-align: center;
-    flex-shrink: 2;
-    margin: 0%;
+  text-align: center;
+  flex-shrink: 2;
+  margin: 0%;
 }
 
 /* for desktops */
 @media only screen and (min-width: 768px) {
-    figure {
-        margin: 3%;
-    }
+  figure {
+    margin: 3%;
+  }
 }
 
 /* Footer Styles */
 .page__footer {
-    background: #000;
-    padding: 3em;
-    color: #fff;
+  background: #000;
+  padding: 3em;
+  color: #fff;
 }
 
 .page__footer p {
-    color: #fff;
+  color: #fff;
 }
 
 .soft_skill_list {
-    text-align: left;
-    font-size: 2rem;
+  text-align: left;
+  font-size: 2rem;
 }
 
 .footer_text {
-    text-align: center;
-    text-decoration: blue;
+  text-align: center;
+  text-decoration: blue;
 }
 
 /* ---- Theme Rules ---- */
 /* Landing Container Styles */
 .landing__container {
-    padding: 1em;
-    text-align: left;
-    height: fit-content;
+  padding: 1em;
+  text-align: left;
+  height: 500px;
 }
 
 @media only screen and (min-width: 35em) {
-    .landing__container {
-        max-width: 50em;
-        padding: 4em;
-    }
+  .landing__container {
+    max-width: 50em;
+    padding: 4em;
+  }
 }
 
 section:nth-of-type(even) .landing__container {
-    margin-right: 0;
-    margin-left: auto;
-    text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+  text-align: right;
 }
-
 
 /* ---- Theme State Rules ---- */
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.your-active-class {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 section.your-active-class .landing__container::before {
-    opacity: 1;
-    animation: rotate 4s linear 0s infinite forwards;
+  opacity: 1;
+  animation: rotate 4s linear 0s infinite forwards;
 }
 
 section.your-active-class .landing__container::after {
-    opacity: 1;
-    animation: rotate 5s linear 0s infinite forwards reverse;
+  opacity: 1;
+  animation: rotate 5s linear 0s infinite forwards reverse;
 }
 
 /* Section Active Styles Keyframe Animations */
 @keyframes rotate {
-    from {
-        transform: rotate(0deg) translate(-1em) rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg) translate(-1em) rotate(0deg);
+  }
 
-    to {
-        transform: rotate(360deg) translate(-1em) rotate(-360deg);
-    }
+  to {
+    transform: rotate(360deg) translate(-1em) rotate(-360deg);
+  }
 }

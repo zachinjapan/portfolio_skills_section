@@ -1,3 +1,9 @@
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en'
+    }, 'google_translate_element');
+}
+
 /*** Define Global Variables* */
 // header section
 const header = document.querySelector(".page__header");

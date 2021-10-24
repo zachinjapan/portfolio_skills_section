@@ -116,7 +116,6 @@ figcaption {
 figure {
   text-align: center;
   flex-shrink: 2;
-  margin: 0%;
 }
 
 /* for desktops */
